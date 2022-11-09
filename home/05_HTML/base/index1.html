@@ -7,51 +7,130 @@
     <title>Формы</title>
 
 
-<table width="700" border="1">
-    <tr> <!-- 1 cтрока -->
+<table width="700">
+    <tr> 
         <td>
             <p><strong>Простая форма поиска с вариантами:</strong></p>
-            <form name="search1" method="post" action="http://fe.it-academy.by/Testform.php">
-               <fieldset>
-                  <legend>Строка поиска </legend>
-                    <label>
-                        <input type="text" name="search1"  >
-                        <input type="submit" value="Искать">
+            <form name="search1" method="post" action="http://fe.it-academy.by/TestForm.php">
+               <fieldset> 
+                  <legend>Строка поиска </legend> 
+                    <label> 
+                        <input type="text" name="search1"> <!--zadat pattern-->
                     </label>
-                 
-
-               </fieldset>
-
-
-
+                     <input type="submit" value="Искать"> 
+                     <br>
+                    <input type="radio" name="siteorgoogle" value="site">на сайте
+                    <input type="radio" name="siteorgoogle" value="google">в google
+                    <p><i>Длина запроса не более 10 символов</i></p>
+                </fieldset>
             </form>
         </td>
         <td>
             <p><strong>Простая форма поиска с вариантами:</strong></p>
-            
+            <form name="search2" method="post" action="http://fe.it-academy.by/TestForm.php">
+                <fieldset> 
+                   <legend>Строка поиска </legend> 
+                     <label> 
+                         <input type="text" name="search2" placeholder="это обязательное поле"> 
+                     </label>
+                        <sup>*</sup>
+                         <input type="submit" value="Искать"> 
+                         <br>
+                         <input type="radio" name="siteorgoogle" value="site">на сайте
+                         <input type="radio" name="siteorgoogle" value="google">в google
+                         <p><sup>*</sup><i>-обязательное поле</i></p>
+                </fieldset>
+             </form>
         </td>
     </tr>
-    <tr> <!-- 2 cтрока -->
+    <tr>
         <td>
             <p><strong>Простая форма авторизации:</strong></p>
-            
+            <form name="search3" method="post" action="http://fe.it-academy.by/TestForm.php">
+                <fieldset> 
+                   <legend>Авторизуйтесь</legend> 
+                     <label> 
+                         <input type="text" name="search3_1">
+                     </label>
+                     <sup>*</sup>Логин
+                     <br>
+                     <label> 
+                        <input type="text" name="search3_2">
+                     </label>
+                     <sup>*</sup>Пароль
+                     <br>
+                     <input type="checkbox" name="stay" value="on">Оставаться в системе
+                     <input type="submit" value="Войти"> 
+                     <br>
+                     <p><sup>*</sup><i>-обязательное поле</i></p>
+                 </fieldset>
+             </form>
         </td>
         <td>
             <p><strong>Опрос (голосование):</strong></p>
-            
+            <form name="search4" method="post" action="http://fe.it-academy.by/TestForm.php">
+                <fieldset> 
+                   <legend>Как вам?</legend> 
+                     <input type="radio" name="how" value="nothing">ничего<br>
+                     <input type="radio" name="how" value="notbad">неплохо<br>
+                     <input type="radio" name="how" value="good">хорошо<br>
+                     <input type="radio" name="how" value="super">супер<br>
+                     <input type="submit" value="Отправить">
+                 </fieldset>
+             </form>
         </td>
     </tr>
-    <tr> <!-- 3 cтрока -->
+    <>
         <td>
             <p><strong>Отзыв:</strong></p>
-            
+            <form name="search5" method="post" action="http://fe.it-academy.by/TestForm.php">
+                <fieldset> 
+                   <legend>Оставьте ваш отзыв</legend> 
+                     <label> 
+                         <input type="text" name="search5_1">
+                     </label>
+                      <sup>*</sup>Имя<br>
+                     <label> 
+                        <input type="text" name="search5_2">
+                     </label>
+                        <sup>*</sup>e-mail<br>
+                        <textarea name="text_area">Форма отправки</textarea><br>
+                        <input type="submit" value="Отправить"><br>   
+                    <p><sup>*</sup><i>-обязательное поле</i></p>
+                </fieldset>
+            </form>
         </td>
         <td>
-            <p><strong>Выпадающий и мультисписки:</strong></p>
-            
+            <p><strong>Выпадающий и мульти списки:</strong></p>  
+            <form name="search5" method="post" action="http://fe.it-academy.by/TestForm.php"> 
+                <fieldset>
+                <legend>Города РБ</legend>
+                <select name="list">
+                   <option value="brest" selected>Брест</option>
+                   <option value="minsk">Минск</option>
+                   <option value="vitebsk">Витебск</option>
+                </select>
+                <select name="list2[]" multiple>
+                    <optgroup label="Города РБ">
+                       <option value="brest">Брест</option>
+                       <option value="minsk">Минск</option>
+                       <option value="vitebsk">Витебск</option>
+                    </optgroup>
+                    <optgroup label="Города РБ">
+                        <option value="brest">Брест</option><!--доделать-->
+                        <option value="minsk">Минск</option>
+                        <option value="vitebsk">Витебск</option>
+                    </optgroup>
+                </select>
+                 <input type="submit" value="Ок">
+                </fieldset>
+            </form>
         </td>
-    </tr>
-    <tr> <!-- 4 cтрока -->
+    
+
+
+
+    <tr> 
         <td>
             <p><strong>Загрузка файла на сервер:</strong></p>
             
