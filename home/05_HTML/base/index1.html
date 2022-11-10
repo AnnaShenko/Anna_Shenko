@@ -75,6 +75,7 @@
                      <input type="radio" name="how" value="notbad">неплохо<br>
                      <input type="radio" name="how" value="good">хорошо<br>
                      <input type="radio" name="how" value="super">супер<br>
+                     <input type="hidden" name="date" value="2013.12.31">
                      <input type="submit" value="Отправить">
                  </fieldset>
              </form>
@@ -86,11 +87,11 @@
                 <fieldset> 
                    <legend>Оставьте ваш отзыв</legend> 
                      <label> 
-                         <input type="text" name="search5_1">
+                         <input type="text" name="first_name">
                      </label>
                       <sup>*</sup>Имя<br>
                      <label> 
-                        <input type="text" name="search5_2">
+                        <input type="text" name="mail"> <!--net proverki-->
                      </label>
                         <sup>*</sup>e-mail<br>
                         <textarea name="text_area">Форма отправки</textarea><br>
@@ -140,9 +141,16 @@
         </td>
         <td valign="top">
             <p><strong>Валидация данных HTML5:</strong></p><br>
-            <form>
+            <form name="validation" method="post" action="http://fe.it-academy.by/TestForm.php">
                 <fieldset>
-                    <input type="text" name="ages">
+                    <label>            <!--валидация не работает-->
+                      <input type="text" name="info"  placeholder="Только русские буквы" pattern="[А-Яа-яЁё]">
+                    </label>
+                     <label>
+                        <p><i>Телефонный номер в формате</i></p>
+                        <input type="text" name="telephone" placeholder="+ХХХ-ХХ-ХХХХХХХ" pattern="^(\+375|80)-(29|25|44|33)-(\d{3})(\d{2})(\d{2})$">
+                     </label>
+                    <input type="submit" value="Проверить">
                 </fieldset>
             </form>
 
