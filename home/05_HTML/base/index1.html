@@ -14,7 +14,7 @@
                <fieldset> 
                   <legend>Строка поиска </legend> 
                     <label> 
-                        <input type="text" name="search1"> <!--zadat pattern-->
+                        <input type="text" name="search1" maxlength="10"> 
                     </label>
                      <input type="submit" value="Искать"> 
                      <br>
@@ -30,7 +30,7 @@
                 <fieldset> 
                    <legend>Строка поиска </legend> 
                      <label> 
-                         <input type="text" name="search2" placeholder="это обязательное поле"> 
+                         <input type="text" name="search2" placeholder="это обязательное поле" autofocus> 
                      </label>
                         <sup>*</sup>
                          <input type="submit" value="Искать"> 
@@ -49,12 +49,12 @@
                 <fieldset> 
                    <legend>Авторизуйтесь</legend> 
                      <label> 
-                         <input type="text" name="search3_1">
+                         <input type="text" name="login">
                      </label>
                      <sup>*</sup>Логин
                      <br>
                      <label> 
-                        <input type="text" name="search3_2">
+                        <input type="text" name="password">
                      </label>
                      <sup>*</sup>Пароль
                      <br>
@@ -115,27 +115,38 @@
                        <option value="minsk">Минск</option>
                        <option value="vitebsk">Витебск</option>
                     </optgroup>
-                    <optgroup label="Города РБ">
-                        <option value="brest">Брест</option><!--доделать-->
-                        <option value="minsk">Минск</option>
-                        <option value="vitebsk">Витебск</option>
+                    <optgroup label="Города России">
+                        <option value="moscow">Москва</option>
+                        <option value="ryazan">Рязань</option>
+                        <option value="magadan">Магадан</option>
                     </optgroup>
                 </select>
                  <input type="submit" value="Ок">
                 </fieldset>
             </form>
         </td>
-    
-
-
-
     <tr> 
         <td valign="top">
             <p><strong>Загрузка файла на сервер:</strong></p>
-            
+            <form name="upload" method="post" action="http://fe.it-academy.by/TestForm.php">
+                <fieldset>
+                    <legend>Upload</legend>
+                    <input type="file" name="upload_file" dir="ltr" enctype="multipart/form-data"> 
+                    <p>Срок хранения (года):</p>
+                    <input type="text" name="ages">
+                    <input type="submit" value="загрузить">
+                </fieldset>
+            </form>
         </td>
         <td valign="top">
-            <p><strong>Валидация данных HTML5:</strong></p>
+            <p><strong>Валидация данных HTML5:</strong></p><br>
+            <form>
+                <fieldset>
+                    <input type="text" name="ages">
+                </fieldset>
+            </form>
+
+            
             
         </td>
     </tr>
