@@ -144,7 +144,7 @@
             <form name="validation" method="post" action="http://fe.it-academy.by/TestForm.php">
                 <fieldset>
                     <label>            <!--валидация не работает-->
-                      <input type="text" name="info"  placeholder="Только русские буквы" pattern="[А-Яа-яЁё]">
+                      <input type="text" name="info" placeholder="Только русские буквы" pattern="^[А-Яа-яЁё]+$">
                     </label>
                      <label>
                         <p><i>Телефонный номер в формате</i></p>
