@@ -8,11 +8,11 @@ h4{font-family: 'Bad Script', cursive;
     text-decoration: underline;
 
 }
-p.head{
+.head{
     white-space: pre;
     text-align: right;
 }
-p.letter{
+.letter{
     font-family: 'Bad Script', cursive;
     text-indent: 25px;
 }
