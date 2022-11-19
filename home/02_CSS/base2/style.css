@@ -1,0 +1,17 @@
+.list1{
+    width: 350px;
+    font-weight: bold;
+    list-style-type: upper-roman;
+}
+.list2{
+    list-style-type: lower-roman;
+}
+div{
+    white-space: pre;
+    color: green;
+    background-color: black;
+    width: 400px;
+    line-height: 15px;
+    max-height: 4em;
+    overflow: auto;
+}
