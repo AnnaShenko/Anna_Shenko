@@ -1,0 +1,25 @@
+.menu{
+    width: 15em;
+    background-color: bisque;
+    float: left;
+}
+.content{
+    margin-left: 15em;
+    
+}
+.article{
+    background-color: lavender;
+    margin-bottom: .2em;
+}
+.footer{
+    background-color: rgb(183, 211, 234);
+}
+.spacer{
+    clear: both;
+}
+p{
+    font-weight: bold;
+}
+img{
+    float: right;
+}
