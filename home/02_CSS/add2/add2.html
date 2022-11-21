@@ -4,51 +4,6 @@
   <META charset="utf-8">
   <TITLE>Страница с блоками</TITLE>
   <link rel="stylesheet" href="style.css">
-
-<style>
-
-.container{
-    display: flex;
-    background-color: beige;
-    align-items: flex-start;
-    /*flex-wrap: wrap;*/
-}
-.menu{
-    order: 1;
-    background-color: bisque;
-}
-.content{
-    order: 2;
-    flex-direction: column;
-    background-color: azure;
-}
-.article{
-    background-color: lavender;
-    margin-bottom: .2em;
-}
-
-
-.image{
-    order: 3;
-    align-self: center;
-
-}
-.spacer{
-    clear: both;
-}
-.footer{
-    background-color: lightsteelblue;
-
-}
-p{
-    margin-top: 0%;
-    font-weight: bold;
-}
-
-</style>
-
-
-
 </head>
 <body>
 <div class="container">
@@ -78,7 +33,7 @@ p{
             Должен присутствовать цвет фона.
             Во всех статьях сделайте отступ снизу от соседей равным .2em, при помощи свойства margin-bottom.
             Картинка вставлена при помощи тега, плавание организовано по правому краю внутри данной статьи для этой картинки.
-            <div class="image"><img src="icon_mail.png" alt="icon_mail"></div>
+            <img src="icon_mail.png" alt="icon_mail">
         <div class="spacer"></div>
         </div>
     </div>  
