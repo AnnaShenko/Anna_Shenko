@@ -2,63 +2,25 @@
 <html>
 <head>
   <META charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <TITLE>Меню с выпадающим списком</TITLE>
   <link rel="stylesheet" href="style.css">
-  <style>
-  
-  .menu1{
-    
-  }
-  .mon, .tue, .wed, .th, .fr, .sat{
-    width: 150px;
-    float: left;
-    line-height: 30px;
-    text-align: center;
-    background-color: beige;
-    border: solid goldenrod 2px;
-    border-radius: 5px;
-  }
-  .menu2{
-    width: 150px; display: none
-  }
-  .menu2>div{
-    line-height: 30px;
-    text-align: center;
-    background-color: beige;
-    border: solid goldenrod 2px;
-    border-radius: 5px;
-  }
-  .menu1>div:hover div.menu2 {
-    display: block; position: absolute; bottom: 90%; z-index: 1
-  }
-
-    /*div.MenuLevel1 { width: 100px }
-    div.MenuLevel1 > div { background-color: yellow; border: solid blue 1px; position: relative; cursor: pointer }
-    div.MenuLevel2 { width: 150px; display: none }
-    div.MenuLevel2 > div { background-color: cyan; border: solid blue 1px; cursor: pointer }
-    div.MenuLevel1 > div:hover div.MenuLevel2 { display: block; position: absolute; left: 80%; top: 90%; z-index: 1 }
-    */
-    </style>
 
 </head>
-
 <body>
-      <div class="menu1">
-        <div class="mon">Понедельник</div>
-        <div class="tue">Вторник</div>
-        <div class="wed">Среда</div>
-          <div class='menu2'>
-            <div>Завтрак</div>
-            <div>Обед</div>
-            <div>Ужин</div>
-          </div>
-        <div class="th">Четверг</div>
-        <div class="fr">Пятница</div>
-        <div class="sat">Суббота</div>
+    <div class="menu1">
+      <div class="mon">Понедельник</div>
+      <div class="tue">Вторник</div>
+      <div class="wed">Среда
+        <div class='menu2'>
+          <div>Завтрак</div>
+          <div>Обед</div>
+          <div>Ужин</div>
+        </div>
       </div>
-
-
-
-      
-</body>
+      <div class="th">Четверг</div>
+      <div class="fr">Пятница</div>
+      <div class="sat">Суббота</div>
+    </div>    
+  </body>
 </html>

@@ -1,0 +1,47 @@
+.menu1>div{
+    width: 150px;
+    float: left;
+    line-height: 30px;
+    text-align: center;
+    background-color: beige;
+    border: solid goldenrod 2px;
+    border-radius: 5px;
+    position: relative; /*proverca*/
+    cursor: pointer;
+  }
+  .menu1>div:hover{
+    background-color: rgba(241, 241, 183, 0.967);
+  }
+  .menu2{
+    width: 150px; 
+    display: none
+  }
+  .menu2>div{
+    width: 150px;
+    line-height: 30px;
+    text-align: center;
+    background-color: gainsboro;
+    border: solid goldenrod 2px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .menu2>div:hover{
+    background-color: rgba(230, 227, 227, 0.831);
+  }
+
+  div.menu1 > div:hover div.menu2{  
+    display: block;
+    position: absolute;
+    top: 100%;
+    z-index: 1 
+  }
+
+  @media all and (max-width: 940px){
+    .menu1>div{
+    float: none;
+    }
+    div.menu1 > div:hover div.menu2{ 
+    left: 100%; 
+    top: 0%;
+    }
+  }
