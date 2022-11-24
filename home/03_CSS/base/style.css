@@ -6,7 +6,7 @@
     background-color: beige;
     border: solid goldenrod 2px;
     border-radius: 5px;
-    position: relative; /*proverca*/
+    position: relative; 
     cursor: pointer;
   }
   .menu1>div:hover{
@@ -25,11 +25,11 @@
     border-radius: 5px;
     cursor: pointer;
   }
-  .menu2>div:hover{
+  .menu2>:hover{
     background-color: rgba(230, 227, 227, 0.831);
   }
 
-  div.menu1 > div:hover div.menu2{  
+  .menu1>:hover .menu2{  
     display: block;
     position: absolute;
     top: 100%;
@@ -40,7 +40,7 @@
     .menu1>div{
     float: none;
     }
-    div.menu1 > div:hover div.menu2{ 
+    div.menu1>:hover .menu2{ 
     left: 100%; 
     top: 0%;
     }
