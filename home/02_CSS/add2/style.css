@@ -2,7 +2,7 @@
     display: flex;
     background-color: beige;
     align-items: flex-start;
-    /*flex-wrap: wrap;*/
+    
 }
 .menu{
     order: 1;
