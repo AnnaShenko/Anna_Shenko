@@ -1,40 +1,50 @@
+*{
+  box-sizing: border-box;
+}
 .menu1>div{
-    width: 150px;
-    float: left;
-    line-height: 30px;
-    text-align: center;
-    background-color: beige;
-    border: solid goldenrod 2px;
-    border-radius: 5px;
-    position: relative;
-    cursor: pointer;
-  }
-  .menu1>:hover{
-    background-color: rgba(241, 241, 183, 0.967);
-  }
-  .menu2{
-    width: 150px; 
-    display: none
-  }
-  .menu2>div{
-    width: 150px;
-    line-height: 30px;
-    text-align: center;
-    background-color: gainsboro;
-    border: solid goldenrod 2px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  .menu2>:hover{
-    background-color: rgba(230, 227, 227, 0.831);
-  }
-
-  .menu1>:hover .menu2{  
-    display: block;
-    position: absolute;
-    top: 100%;
-    z-index: 1 
-  }
+width: 150px;
+float: left;
+line-height: 30px;
+text-align: center;
+background-color: beige;
+border: solid goldenrod 2px;
+border-radius: 5px;
+position: relative;
+cursor: pointer;
+}
+.menu1>:hover{
+background-color: rgba(241, 241, 183, 0.967);
+}
+.menu2{
+display: none;
+width: 150px; 
+}
+.menu2>div{
+width: 150px;
+line-height: 30px;
+text-align: center;
+background-color: gainsboro;
+border: solid goldenrod 2px;
+border-radius: 5px;
+cursor: pointer;
+}
+.menu2{
+opacity: 0;
+transition-duration: 1s;
+}
+.menu2>:hover{
+background-color: rgba(230, 227, 227, 0.831);
+}
+.menu1>:hover .menu2{ 
+display: block;
+position: absolute;
+top: 100%;
+z-index: 1 
+}
+.menu1>:hover .menu2{  
+opacity: 1;
+transition-duration: 1s;
+}
 
   @media all and (max-width: 940px){
     .menu1>div{
