@@ -15,10 +15,6 @@ cursor: pointer;
 .menu1>:hover{
 background-color: rgba(241, 241, 183, 0.967);
 }
-.menu2{
-display: none;
-width: 150px; 
-}
 .menu2>div{
 width: 150px;
 line-height: 30px;
@@ -28,13 +24,18 @@ border: solid goldenrod 2px;
 border-radius: 5px;
 cursor: pointer;
 }
+.menu2>:hover{
+  background-color: rgba(230, 227, 227, 0.831);
+  }
+.menu2{
+  display: none;
+  width: 150px; 
+  }
 .menu2{
 opacity: 0;
 transition-duration: 1s;
 }
-.menu2>:hover{
-background-color: rgba(230, 227, 227, 0.831);
-}
+
 .menu1>:hover .menu2{ 
 display: block;
 position: absolute;
