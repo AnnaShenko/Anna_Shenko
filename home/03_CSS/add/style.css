@@ -34,7 +34,7 @@ background-color: rgba(230, 227, 227, 0.831);
 .menu2{
 height: 0;
 opacity: 0;
-transition-duration: 1s;
+transition-duration: 0.7s;
 }
 .menu1>:hover .menu2{ 
 display: block;
