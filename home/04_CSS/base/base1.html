@@ -15,6 +15,24 @@
     li{
         list-style: none;
     }	
+    li.doc>a>img{
+        opacity: 0;
+    }
+    li.doc>a:hover img{
+        opacity: 1;
+    }
+    li.pdf>a>img{
+        opacity: 0;
+    }
+    li.pdf>a:hover img{
+        opacity: 1;
+    }
+    li.zip>a>img{
+        opacity: 0;
+    }
+    li.zip>a:hover img{
+        opacity: 1;
+    }
 	</style>	
     </head> 
 <body>
@@ -34,9 +52,9 @@
 
     <h3>Это список из файлов</h3>
         <ul>
-        	<li class="doc" ><a href="#"><img src="pic/logo-list.jpg"> Документ MS Word</a></li>
-        	<li class="pdf" ><a href="#"><img src="pic/logo-list.jpg">Документ PDF</a></li>
-        	<li class="zip" ><a href="#"><img src="pic/logo-list.jpg">Архив</a></li>
+        	<li class="doc"><img src="pic/logo-list.jpg"><a href="#"> Документ MS Word<img src="pic/logo-doc.jpg"></a></li>
+        	<li class="pdf"><img src="pic/logo-list.jpg"><a href="#">Документ PDF<img src="pic/logo-pdf.png"></a></li>
+        	<li class="zip"><img src="pic/logo-list.jpg"><a href="#">Архив<img src="pic/logo-zip.gif"></a></li>
         </ul>
 
     </body> 
