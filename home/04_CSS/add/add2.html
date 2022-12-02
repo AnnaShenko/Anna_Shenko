@@ -15,7 +15,13 @@ td{
     text-align: center;
     border-color: black;
     font-size: 2em;
+    counter-reset: td 66;                         /**/
 }
+td {                                           /*+3 stroki*/
+    counter-increment: -1;
+    content: counter(td); 
+}
+
 .one>td:nth-child(2n+1){
     color:white;
     background-color: black;
@@ -34,10 +40,10 @@ td{
 <body>
 <table>
     <tr class="one">
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
-        <td>4</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>
