@@ -7,6 +7,7 @@
 table{
     border: solid;
     border-collapse: collapse;
+    counter-reset: cell 65;
 }
 td{
     border: solid;
@@ -15,11 +16,11 @@ td{
     text-align: center;
     border-color: black;
     font-size: 2em;
-    counter-reset: td 66;                         /**/
+
 }
-td {                                           /*+3 stroki*/
-    counter-increment: -1;
-    content: counter(td); 
+td::before{                                        
+    counter-increment: cell -1;
+    content: counter(cell); 
 }
 
 .one>td:nth-child(2n+1){
